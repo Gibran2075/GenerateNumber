@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bagian1">
+      <div class="border">
+        <h3>Masukkan Angka Kamu dari 1 - 10000</h3>
+      </div>
+      <input type="number" id="numberInput" />
+      <button class="btn1" onclick="pergiKeTab2()">Selanjutnya</button>
+    </div>
+
+    <div class="bagian2">
+      <div class="btn2" class="tab" id="tab2">
+        <button onclick="generateTable()">Generate Table</button>
+        <table id="randomTable"></table>
+        <button onclick="goToTab3()">Next</button>
+      </div>
+    </div>
+
+    <div class="bagian3">
+      <div class="tab" id="tab3">
+        <button onclick="findSmallestPositive()">Klik Untuk Menemukan Angka</button>
+        <div id="result"></div>
+        <p id="smallestPositive"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
